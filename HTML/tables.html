@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLES</title>
+    <link rel="icon" href="../img/rk.jpg"> 
+    <!--<style>
+        table,th,td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            background-color: aqua;
+        }
+    </style>-->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-radius: 10px;
+            border-style: double;
+            border-color: brown;
+            padding: 15px;
+            border-collapse: collapse;
+
+        }
+
+        th,
+        td {
+            background-color: aqua;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        table {
+            border-spacing: 30px;
+        }
+
+        tr:nth-child(even) {
+            background-color: blueviolet;
+        }
+
+        tr:hover {
+            background-color: antiquewhite;
+        }
+    </style>
+    <link rel="stylesheet" href="buttonstyle.css">
+</head>
+
+<body>
+    <a href="../index.html"><button id="buttonstyle">BACK TO INDEX</button></a>
+    <hr>
+    <h1 style="font-size: xx-large; text-align: center;">HTML TABLES</h1>
+    <hr>
+    <table style="width: 100%;">
+        <caption>RK table</caption>
+        <tr>
+            <th style="width: 70%;" colspan="2">company</th>
+            <!--<th>contact</th>-->
+            <th>country</th>
+        </tr>
+        <tr style="height: 200px;">
+            <td>rk</td>
+            <td>mobile</td>
+            <td>india</td>
+        </tr>
+
+
+    </table>
+    <br>
+    <table style="width: 100%;">
+        <tr>
+            <th>sno</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th rowspan="2">name</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
