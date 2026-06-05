@@ -6,13 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML BACKGROUND IMAGES</title>
     <link rel="icon" href="../img/rk.jpg">
-    
+
     <link rel="stylesheet" href="buttonstyle.css">
+    <style>
+        body {
+            background-image: url('../img/img_girl.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 
 <body>
     <a href="../index.html"><button id="buttonstyle">BACK TO INDEX</button></a>
     <hr>
     <h1 style="font-size: xx-large; text-align: center;">HTML BACKGROUND IMAGES</h1>
-    </body>
-    </html>
+    <hr>
+    <h1 style="font-size: xx-large;">Background Image on an HTML element</h1>
+    <p style="background-image: url(../img/img_girl.jpg);">You can specify background images<br>
+        for any visible HTML element.<br>
+        In this example, the background image<br>
+        is specified for a p element.<br>
+        By default, the background-image<br>
+        will repeat itself in the direction(s)<br>
+        where it is smaller than the element<br>
+        where it is specified. Try resizing the<br>
+        browser window to see how the<br>
+        background image behaves.</p>
+    <hr>
+    <h1 style="font-size: xx-large;"> Background Image on a Page</h1>
+    <p>Give style for body </p>
+    <hr>
+    <h1 style="font-size: xx-large;">Background Repeat</h1>
+    <h>In Style give background repeat as no repeat</h>
+    <hr>
+    <h1 style="font-size: xx-large;">Background Cover</h1>
+    <h style="color: red;">If you want the background image to cover the entire element, you can set the background-size
+        property to cover.
+
+        Also, to make sure the entire element is always covered, set the background-attachment property to fixed:</h>
+        <hr>
+    <h1 style="font-size: xx-large;">Background Stretch</h1>
+    <h>to stretch to fit the entire element, you can set the background-size property to 100% 100%</h>
+</body>
+
+</body>
+
+</html>
