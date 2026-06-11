@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML INPUT TYPES</title>
+    <link rel="icon" href="../img/w3s.png">
+    <link rel="stylesheet" href="buttonstyle.css">
+</head>
+
+<body>
+    <a href="../index.html"><button id="buttonstyle">BACK TO INDEX</button></a>
+    <hr>
+    <h1 style="font-size: xx-large; text-align: center;">HTML FORM INPUT TYPES</h1>
+    <br>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Text</h1>
+    <form action="#" method="get" autocomplete="on">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Text & Submit</h1>
+    <form action="#">
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" id="username"><br>
+        <label for="password">Password:</label><br>
+        <input id="password" type="password" name="password"><br>
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Reset</h1>
+    <form action="#" method="get" autocomplete="on">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Radio</h1>
+    <p><b>Choose your favorite web languages:</b></p>
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="html">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JAVASCRIPT">
+        <label for="html">JAVASCRIPT</label><br>
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Checkbox</h1>
+    <p><b>What does Shravan have:</b></p>
+    <form action="#">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">He has a Bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">He has many cars</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Helicopter">
+        <label for="vehicle3">He has a Helicopter</label><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Button</h1>
+    <button type="button" onclick="alert('Welcome')">Click me</button>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Color</h1>
+    <hr>
+    <form action="#">
+        <label for="favcolor">Select your favorite color</label>
+        <input type="color" id="favcolor" name="favcolor" value="#000000">
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Date</h1>
+    <form action="#">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+    </form>
+    <hr>
+    <form action="#">
+        <label for="datemax">enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" max="1979-12-31"><br>
+        <label for="datemin">enter date after 2000-01-01</label>
+        <input type="date" id="datemin" min="200-01-02">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Datetime-local</h1>
+    <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Email</h1>
+    <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Image</h1>
+    <form>
+        <input type="image" src="../img/green-arrow.gif" alt="Submit" width="50" height="50">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type File</h1>
+    <form action="#">
+        <label for="myfile">Selecyt a file:</label>
+        <input type="file" id="myfile" name="myfile"><br>
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Hidden</h1>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Month</h1>
+    <form>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Number</h1>
+    <form>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Date</h1>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Date</h1>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Date</h1>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Date</h1>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Date</h1>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Date</h1>
+    <hr>
+    <h1 style="font-size: xx-large;">Input Type Date</h1>
+
+</body>
+
+</html>

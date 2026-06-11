@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM ELEMENTS</title>
+    <link rel="icon" href="../img/w3s.png">
+    <link rel="stylesheet" href="buttonstyle.css">
+</head>
+
+<body>
+    <a href="../index.html"><button id="buttonstyle">BACK TO INDEX</button></a>
+    <hr>
+    <h1 style="font-size: xx-large; text-align: center;">HTML FORM ELEMENTS</h1>
+    <br>
+    <label for="fname">First Name:</label>
+    <inpu t type="text" id="fname" name="fname">
+        </form>
+        <h1 style="font-size: xx-large;">Select, Option and Size Elements</h1>
+        <form accept="#">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="2">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="volkswagen">Volkswagen</option>
+            </select>
+            <input type="submit">
+        </form>
+        <hr>
+        <h1 style="font-size: xx-large;">Multiple Selections</h1>
+        <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+        <form accept="#">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="2" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="volkswagen">Volkswagen</option>
+            </select>
+            <input type="submit">
+        </form>
+        <hr>
+        <h1 style="font-size: xx-large;">Text area element:</h1>
+        <p>The textarea element defines a multi-line input field.</p>
+        <form accept="#">
+            <textarea name="message" rows="25" cols="35"></textarea><br>
+            <input type="submit">
+        </form>
+        <hr>
+        <h1 style="font-size: xx-large;">Button element:</h1>
+        <button type="button" onclick="alert('Welcome')">Click me</button>
+        <hr>
+        <h1 style="font-size: xx-large;">The fieldset and legend Elements</h1>
+        <form action="#">
+            <fieldset>
+                <legend>personalia:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <hr>
+        <h1 style="font-size: xx-large;">The datalist Element</h1>
+        <form action="#">
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="edge"></option>
+                <option value="safari"></option>
+                <option value="vaanibam"></option>
+                <option value="Shravan"></option>
+            </datalist>
+            <input type="submit">
+        </form>
+        <hr>
+        <h1 style="font-size: xx-large;">The output Element</h1>
+        <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br>
+            <input type="submit">
+        </form>
+
+</body>
+
+</html>

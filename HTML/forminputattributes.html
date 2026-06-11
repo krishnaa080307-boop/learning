@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM INPUT ATTRIBUTES</title>
+    <link rel="icon" href="../img/w3s.png">
+    <link rel="stylesheet" href="buttonstyle.css">
+</head>
+
+<body>
+    <a href="../index.html"><button id="buttonstyle">BACK TO INDEX</button></a>
+    <hr>
+    <h1 style="font-size: xx-large; text-align: center;">HTML FORM INPUT ATTRIBUTES</h1>
+    <br>
+    <hr>
+    <h1 style="font-size: xx-large;">The form Attribute</h1>
+    <form action="#" id="form1">
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" form="form1">
+    <hr>
+    <h1 style="font-size: xx-large;">The formaction Attribute</h1>
+    <form action="#">
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <input type="submit" value="submit">
+        <input type="submit" formaction="#" value="submit as Admin">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">The formenctype Attribute</h1>
+    <form action="#" method="post">
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <input type="submit" value="submit">
+        <input type="submit" formenctype="multipart/form-data" value="submit as Multipart/form-data">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">The formmethod Attribute</h1>
+    <form action="#" method="get" target="_blank">
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="submit using get">
+        <input type="submit" formmethod="post" value="submit using post">
+    </form>
+    <hr>
+    <h1 style="font-size: xx-large;">The formtarget Attribute</h1>
+    <label for="fname">first name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="submit">
+    <input type="submit" formtarget="_blank" value="submit to a new window/tab">
+    <hr>
+    <h1 style="font-size: xx-large;">The formnovalidate Attribute</h1>
+    <form action="#">
+        <label for="email">enter your email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="submit">
+        <input type="submit" formnovalidate="formnovalidate" value="submit without validation">
+    </form>
+    <hr>
+</body>
+
+</html>
